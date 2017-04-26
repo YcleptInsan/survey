@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Online Marketplace</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Build Your Own Robot</h1>
+      <form id="main">
+        <div class="form-group" id="header">
+          <label for="name">Your Robot's Name:</label>
+          <input id="name" class="form-control" type="text">
+        </div>
+
+        <div class="question1">
+          <label for="robot-style">Robot Style</label>
+          <br>
+          <select class="form-control">
+            <option class="robot-style" value="1">Javabot</option>
+            <option value="2">HTMLfromHELLbot</option>
+            <option value="3">CSSSnakebot</option>
+            <option value="4">BootStrapBillbot</option>
+            <option value="5">jQueryO'leary</option>
+          </select>
+        </div>
+
+        <div class="question2">
+          <label for="radio">Skill Level</label>
+          <br>
+          <div class="radio">
+            <label>
+              <input type="radio" name="level" value="beginner">
+              Beginner
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="level" value="intermediate">
+              Intermediate
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="level" value="expert" checked>
+              Expert
+            </label>
+          </div>
+        </div>
+
+        <div class="question3">
+          <div class="form-group">
+            <label for="entry">Date of Entry:</label>
+            <br>
+            <input id="entry" class="form-control" type="date">
+          </div>
+        </div>
+
+        <div class="question4">
+          <div class="form-group">
+            <label for="color">Robot Color</label>
+            <br>
+            <input id="color" class="form-control" type="color">
+          </div>
+        </div>
+
+
+        <button type="submit" class="btn">Make Your Robot!</button>
+      </form>
+
+      <div id="output">
+
+      </div>
+    </div>
+  </body>
+</html>
